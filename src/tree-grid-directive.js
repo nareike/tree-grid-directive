@@ -24,8 +24,8 @@
                     "             {{row.branch[expandingProperty.field] || row.branch[expandingProperty]}}</span>\n" +
                     "       </td>\n" +
                     "       <td ng-repeat=\"col in colDefinitions\">\n" +
-                    "         <div ng-if=\"col.cellTemplate\" compile=\"col.cellTemplate\" cell-template-scope=\"col.cellTemplateScope\"></div>\n" +
-                    "         <div ng-if=\"!col.cellTemplate\">{{row.branch[col.field]}}</div>\n" +
+                    "         <div ng-class='{indented:$first}' ng-if=\"col.cellTemplate\" compile=\"col.cellTemplate\" cell-template-scope=\"col.cellTemplateScope\"></div>\n" +
+                    "         <div ng-class='{indented:$first}' ng-if=\"!col.cellTemplate\">{{row.branch[col.field]}}</div>\n" +
                     "       </td>\n" +
                     "     </tr>\n" +
                     "   </tbody>\n" +
